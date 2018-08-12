@@ -42,8 +42,12 @@ class CategoriesVC: UIViewController, UITableViewDataSource,
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let productsVC = segue.destination as? ProductsVC{
+            let barBtn = UIBarButtonItem()
+            barBtn.title = ""
+            navigationItem.backBarButtonItem = barBtn
             assert(sender as? Category != nil)
             productsVC.initProducts(category: sender as! Category)
+        
         }
     }
     
