@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		F8421B9A212018DE0000B3CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8421B99212018DE0000B3CD /* AppDelegate.swift */; };
-		F8421B9C212018DE0000B3CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8421B9B212018DE0000B3CD /* ViewController.swift */; };
 		F8421B9F212018DE0000B3CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8421B9D212018DE0000B3CD /* Main.storyboard */; };
 		F8421BA1212018E00000B3CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8421BA0212018E00000B3CD /* Assets.xcassets */; };
 		F8421BA4212018E00000B3CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8421BA2212018E00000B3CD /* LaunchScreen.storyboard */; };
+		F8421BAD21201BC50000B3CD /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8421BAC21201BC50000B3CD /* CategoriesVC.swift */; };
+		F8421BB1212021260000B3CD /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8421BB0212021260000B3CD /* CategoryCell.swift */; };
+		F8421BB3212023290000B3CD /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8421BB2212023290000B3CD /* Category.swift */; };
+		F8421BB6212024D90000B3CD /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8421BB5212024D90000B3CD /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F8421B96212018DE0000B3CD /* coder-swag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coder-swag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8421B99212018DE0000B3CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F8421B9B212018DE0000B3CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F8421B9E212018DE0000B3CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8421BA0212018E00000B3CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8421BA3212018E00000B3CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8421BA5212018E00000B3CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8421BAC21201BC50000B3CD /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CategoriesVC.swift; path = ../CategoriesVC.swift; sourceTree = "<group>"; };
+		F8421BB0212021260000B3CD /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		F8421BB2212023290000B3CD /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		F8421BB5212024D90000B3CD /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		F8421B98212018DE0000B3CD /* coder-swag */ = {
 			isa = PBXGroup;
 			children = (
+				F8421BB4212024C90000B3CD /* Services */,
+				F8421BAF212020AB0000B3CD /* View */,
+				F8421BAE212020A00000B3CD /* Model */,
+				F8421BAB212019FB0000B3CD /* Controller */,
 				F8421B99212018DE0000B3CD /* AppDelegate.swift */,
-				F8421B9B212018DE0000B3CD /* ViewController.swift */,
 				F8421B9D212018DE0000B3CD /* Main.storyboard */,
 				F8421BA0212018E00000B3CD /* Assets.xcassets */,
 				F8421BA2212018E00000B3CD /* LaunchScreen.storyboard */,
 				F8421BA5212018E00000B3CD /* Info.plist */,
 			);
 			path = "coder-swag";
+			sourceTree = "<group>";
+		};
+		F8421BAB212019FB0000B3CD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F8421BAC21201BC50000B3CD /* CategoriesVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F8421BAE212020A00000B3CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8421BB2212023290000B3CD /* Category.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F8421BAF212020AB0000B3CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F8421BB0212021260000B3CD /* CategoryCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F8421BB4212024C90000B3CD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F8421BB5212024D90000B3CD /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8421B9C212018DE0000B3CD /* ViewController.swift in Sources */,
+				F8421BAD21201BC50000B3CD /* CategoriesVC.swift in Sources */,
 				F8421B9A212018DE0000B3CD /* AppDelegate.swift in Sources */,
+				F8421BB1212021260000B3CD /* CategoryCell.swift in Sources */,
+				F8421BB3212023290000B3CD /* Category.swift in Sources */,
+				F8421BB6212024D90000B3CD /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
