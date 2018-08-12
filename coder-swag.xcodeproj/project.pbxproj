@@ -15,6 +15,9 @@
 		F8421BB1212021260000B3CD /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8421BB0212021260000B3CD /* CategoryCell.swift */; };
 		F8421BB3212023290000B3CD /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8421BB2212023290000B3CD /* Category.swift */; };
 		F8421BB6212024D90000B3CD /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8421BB5212024D90000B3CD /* DataService.swift */; };
+		F8421BB82120388E0000B3CD /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8421BB72120388E0000B3CD /* ProductCell.swift */; };
+		F8421BBA212039A60000B3CD /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8421BB9212039A60000B3CD /* Product.swift */; };
+		F8421BBE212045F40000B3CD /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8421BBD212045F40000B3CD /* ProductsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		F8421BB0212021260000B3CD /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		F8421BB2212023290000B3CD /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		F8421BB5212024D90000B3CD /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		F8421BB72120388E0000B3CD /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		F8421BB9212039A60000B3CD /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		F8421BBD212045F40000B3CD /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				F8421BAC21201BC50000B3CD /* CategoriesVC.swift */,
+				F8421BBD212045F40000B3CD /* ProductsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -85,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				F8421BB2212023290000B3CD /* Category.swift */,
+				F8421BB9212039A60000B3CD /* Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -93,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				F8421BB0212021260000B3CD /* CategoryCell.swift */,
+				F8421BB72120388E0000B3CD /* ProductCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -176,11 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8421BBE212045F40000B3CD /* ProductsVC.swift in Sources */,
 				F8421BAD21201BC50000B3CD /* CategoriesVC.swift in Sources */,
 				F8421B9A212018DE0000B3CD /* AppDelegate.swift in Sources */,
 				F8421BB1212021260000B3CD /* CategoryCell.swift in Sources */,
+				F8421BB82120388E0000B3CD /* ProductCell.swift in Sources */,
 				F8421BB3212023290000B3CD /* Category.swift in Sources */,
 				F8421BB6212024D90000B3CD /* DataService.swift in Sources */,
+				F8421BBA212039A60000B3CD /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
